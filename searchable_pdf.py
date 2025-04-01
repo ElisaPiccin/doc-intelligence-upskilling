@@ -43,6 +43,7 @@ def call_api(encoded_pdf):
     }
     response = requests.post(url, headers=headers, params=params, json=body)
     if response.status_code == 202:
+        # the request has been accepted for processing but is not yet completed
         request_id = response.headers.get('apim-request-id')
         return poll_status(request_id, pdf_path)
     return response.json()

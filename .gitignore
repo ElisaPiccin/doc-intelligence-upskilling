@@ -164,3 +164,4 @@ cython_debug/
 # VSCode
 .vscode
 .azure
+invoice_sample_search.pdf
