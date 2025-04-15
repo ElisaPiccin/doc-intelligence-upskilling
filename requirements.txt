@@ -1,0 +1,8 @@
+python-dotenv==1.0.1
+openai==1.66.5
+azure-ai-documentintelligence==1.0.1
+azure-identity==1.21.0
+pillow==11.1.0
+PyMuPDF==1.25.4
+pandas==2.2.3
+ipykernel==6.29.5
