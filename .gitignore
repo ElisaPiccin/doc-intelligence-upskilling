@@ -165,3 +165,4 @@ cython_debug/
 .vscode
 .azure
 invoice_sample_search.pdf
+/figures
