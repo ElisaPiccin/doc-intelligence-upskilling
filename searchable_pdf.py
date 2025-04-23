@@ -22,6 +22,9 @@ load_dotenv(override=True)
 DOC_INTEL_URL = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
 DOC_INTEL_KEY = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_KEY")
 
+# Define the API version as a parameter at the beginning of the script
+API_VERSION = "2024-11-30"
+
 def encode_pdf_base64(pdf_path):
     with open(pdf_path, "rb") as pdf_file:
         encoded_string = base64.b64encode(pdf_file.read()).decode('utf-8')
@@ -32,7 +35,7 @@ def call_api(encoded_pdf):
     params = {
         "_overload": "analyzeDocument",
         "output": "pdf",
-        "api-version": "2024-07-31-preview"
+        "api-version": API_VERSION
     }
     headers = {
         "Content-Type": "application/json",
@@ -49,7 +52,7 @@ def call_api(encoded_pdf):
     return response.json()
 
 def poll_status(request_id, pdf_path):
-    status_url = f"{DOC_INTEL_URL}/documentintelligence/documentModels/prebuilt-read/analyzeResults/{request_id}?api-version=2024-07-31-preview"
+    status_url = f"{DOC_INTEL_URL}/documentintelligence/documentModels/prebuilt-read/analyzeResults/{request_id}?api-version={API_VERSION}"
     headers = {
         "Ocp-Apim-Subscription-Key": DOC_INTEL_KEY  # Use the key from environment variables
     }
@@ -61,7 +64,7 @@ def poll_status(request_id, pdf_path):
         time.sleep(10)
 
 def get_file(request_id, pdf_path):
-    file_url = f"{DOC_INTEL_URL}/documentintelligence/documentModels/prebuilt-read/analyzeResults/{request_id}/pdf?api-version=2024-07-31-preview"
+    file_url = f"{DOC_INTEL_URL}/documentintelligence/documentModels/prebuilt-read/analyzeResults/{request_id}/pdf?api-version={API_VERSION}"
     headers = {
         "Ocp-Apim-Subscription-Key": DOC_INTEL_KEY  # Use the key from environment variables
     }
