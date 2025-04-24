@@ -166,3 +166,6 @@ cython_debug/
 .azure
 invoice_sample_search.pdf
 /figures
+output_document.pdf
+output_image.png
+/extracted_figures
