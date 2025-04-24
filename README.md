@@ -2,12 +2,12 @@
 The content of this repository is intended for training purposes only.
 
 
-- **`searchable_pdf.py`**: A Python script to convert images or PDFs into searchable PDFs using Azure Document Intelligence APIs.
-- **`client_quickstart.ipynb`**: A Jupyter Notebook for quick experimentation and testing of the Document Intelligence API.
 - **`requirements.txt`**: A list of Python dependencies required to run the scripts in this repository.
+- **`create_resource.ipynb`**: A Jupyter Notebook for programmatically creating a Document Intelligence resource (single-service deployment).
+- **`client_quickstart.ipynb`**: A Jupyter Notebook for quick experimentation and testing of the Document Intelligence API.
+- **`searchable_pdf.py`**: A Python script to convert images or PDFs into searchable PDFs using Azure Document Intelligence APIs.
 - **`assets/`**: A folder containing sample files, such as invoices and layouts, for testing and demonstration purposes.
-- **`.env`**: A file to store environment variables like API keys and endpoints (not included in the repository for security reasons).
-- **`README.md`**: Documentation for setting up and using the repository.
+- **`.env`**: A file to store environment variables like API keys and endpoints (not included in the repository for security reasons, you can refer to [env.txt](/env.txt) for its template).
 
 
 ## Setting up the Conda Environment
