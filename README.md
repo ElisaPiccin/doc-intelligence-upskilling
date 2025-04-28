@@ -6,6 +6,7 @@ The content of this repository is intended for training purposes only.
 - **`create_resource.ipynb`**: A Jupyter Notebook for programmatically creating a Document Intelligence resource (single-service deployment).
 - **`client_quickstart.ipynb`**: A Jupyter Notebook for quick experimentation and testing of the Document Intelligence API.
 - **`searchable_pdf.py`**: A Python script to convert images or PDFs into searchable PDFs using Azure Document Intelligence APIs.
+- **`sample_analyze_batch_documents.py`**: A Python script to submit a batch of documents to analyze to Azure Document Intelligence.
 - **`assets/`**: A folder containing sample files, such as invoices and layouts, for testing and demonstration purposes.
 - **`.env`**: A file to store environment variables like API keys and endpoints (not included in the repository for security reasons, you can refer to [env.txt](/env.txt) for its template).
 
