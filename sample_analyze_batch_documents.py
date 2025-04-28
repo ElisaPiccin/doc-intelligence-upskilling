@@ -8,6 +8,8 @@
 
 """
 FILE: sample_analyze_batch_documents.py
+SOURCE: https://github.com/Azure/azure-sdk-for-python/blob/azure-ai-documentintelligence_1.0.0/sdk/documentintelligence/azure-ai-documentintelligence/samples/sample_analyze_batch_documents.py
+with minor modifications for training purposes.
 
 DESCRIPTION:
     This sample demonstrates how to analyze documents in a batch.
@@ -34,8 +36,10 @@ USAGE:
     python sample_analyze_batch_documents.py
 
     Set the environment variables with your own values before running the sample:
-    1) DOCUMENTINTELLIGENCE_ENDPOINT - the endpoint to your Document Intelligence resource.
-    2) DOCUMENTINTELLIGENCE_API_KEY - your Document Intelligence API key.
+    1) AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT - the endpoint to your Document Intelligence resource.
+    2) AZURE_DOCUMENT_INTELLIGENCE_KEY - your Document Intelligence API key.
+    3) RESULT_CONTAINER_SAS_URL - the SAS URL to the result container where the analysis results will be stored.
+    4) SOURCE_DATA_CONTAINER_SAS_URL - the SAS URL to the source data container where the documents to be analyzed are stored.
 """
 
 import os
