@@ -19,7 +19,7 @@ To create a conda environment called `di-upskilling` with Python 3.10, follow th
 2. Run the following command to create the environment:
 
     ```sh
-    conda create --name di-upskilling python=3.13
+    conda create --name di-upskilling python=3.13 -y
     ```
 
 3. Activate the newly created environment:
