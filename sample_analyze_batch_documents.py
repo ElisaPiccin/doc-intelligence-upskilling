@@ -39,6 +39,8 @@ USAGE:
     - at least Read, List, Write for the result container
     - at least Read, List for the source container
 
+    Can be used with a SINGLE-SERVICE or with a MULTI-SERVICE Document Intelligence deployment in Azure.
+
     Set the environment variables with your own values before running the sample:
     1) AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT - the endpoint to your Document Intelligence resource.
     2) AZURE_DOCUMENT_INTELLIGENCE_KEY - your Document Intelligence API key.
