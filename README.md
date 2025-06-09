@@ -13,7 +13,7 @@ The content of this repository is intended for training purposes only.
 
 ## Setting up the Conda Environment
 
-To create a conda environment called `di-upskilling` with Python 3.10, follow these steps:
+To create a conda environment called `di-upskilling` with Python 3.13, follow these steps:
 
 1. Open your terminal or command prompt.
 2. Run the following command to create the environment:
