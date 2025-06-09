@@ -35,6 +35,10 @@ DESCRIPTION:
 USAGE:
     python sample_analyze_batch_documents.py
 
+    While generating the SAS tokens, set the permissions you need:
+    - at least Read, List, Write for the result container
+    - at least Read, List for the source container
+
     Set the environment variables with your own values before running the sample:
     1) AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT - the endpoint to your Document Intelligence resource.
     2) AZURE_DOCUMENT_INTELLIGENCE_KEY - your Document Intelligence API key.
@@ -86,7 +90,9 @@ if __name__ == "__main__":
     from dotenv import find_dotenv, load_dotenv
 
     try:
-        load_dotenv(find_dotenv())
+        load_dotenv(find_dotenv(), override=True)
+        azure_docintelligence_endpoint = os.environ.get('AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT')
+        print(f'Current endpoint: {azure_docintelligence_endpoint}')
         analyze_batch_docs()
     except HttpResponseError as error:
         # Examples of how to check an HttpResponseError
