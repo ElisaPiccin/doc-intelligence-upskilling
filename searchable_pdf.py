@@ -5,7 +5,7 @@ https://github.com/christopherwoodland/Searchable-PDF/tree/main
 with minimum refactoring for reading endpoint and key from environment variables.
 
 NB:
-Requires a Document Intelligence SINGLE-SERVICE deployment in Azure.
+Can be used with a SINGLE-SERVICE or with a MULTI-SERVICE Document Intelligence deployment in Azure.
 
 '''
 
