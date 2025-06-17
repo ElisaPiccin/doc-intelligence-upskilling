@@ -61,7 +61,9 @@ def poll_status(request_id, source_file_path):
         result = response.json()
         if result.get("status") == "succeeded":
             return get_file(request_id, source_file_path)
-        time.sleep(10)
+        print(f"Current status: {result.get('status')}")
+        print("...")
+        time.sleep(5)
 
 def get_file(request_id, source_file_path):
     file_url = f"{DOC_INTEL_URL}/documentintelligence/documentModels/prebuilt-read/analyzeResults/{request_id}/pdf?api-version={API_VERSION}"
@@ -78,9 +80,11 @@ def get_file(request_id, source_file_path):
     return response.json()
 
 if __name__ == "__main__":
-    print(DOC_INTEL_URL)
+    print(f"Document Intelligence endpoint: {DOC_INTEL_URL}")
+    print(f"Document Intelligence API version: {API_VERSION}")
     # print(DOC_INTEL_KEY)
     source_file_path = r"invoice_sample.jpg"  # Replace with the path to your starting file
+    print(f"Source file path: {source_file_path}")
     encoded_pdf = encode_pdf_base64(source_file_path)  # Encode the file with BASE64
     result = call_api(encoded_pdf)
     print(result)
