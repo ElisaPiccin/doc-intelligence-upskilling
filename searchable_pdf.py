@@ -1,13 +1,15 @@
-'''
+"""
 Source:
 https://github.com/christopherwoodland/Searchable-PDF/tree/main
 
-with minimum refactoring for reading endpoint and key from environment variables.
+This script is adapted to read the Azure Document Intelligence endpoint and key from environment variables.
 
-NB:
-Can be used with a SINGLE-SERVICE or with a MULTI-SERVICE Document Intelligence deployment in Azure.
+Note:
+- Compatible with both SINGLE-SERVICE and MULTI-SERVICE Document Intelligence deployments in Azure.
 
-'''
+Usage:
+    python searchable_pdf.py
+"""
 
 import base64
 import requests
