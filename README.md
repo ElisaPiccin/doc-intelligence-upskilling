@@ -5,6 +5,7 @@ The content of this repository is intended for training purposes only.
 - **`requirements.txt`**: A list of Python dependencies required to run the scripts in this repository.
 - **`create_resource.ipynb`**: A Jupyter Notebook for programmatically creating a Document Intelligence resource (single-service deployment).
 - **`client_quickstart.ipynb`**: A Jupyter Notebook for quick experimentation and testing of the Document Intelligence APIs and their add-on capabilities.
+- **`composed_model_inference.ipynb`**: A Jupyter Notebook for demonstrating how to leverage a composed model, routing documents between two custom extraction models (extending this [exercise](https://learn.microsoft.com/en-us/training/modules/create-composed-form-recognizer-model/4-exercise-model)).
 - **`searchable_pdf.py`**: A Python script to convert images or PDFs into searchable PDFs using Azure Document Intelligence APIs.
 - **`sample_analyze_batch_documents.py`**: A Python script to submit a batch of documents to analyze to Azure Document Intelligence.
 - **`assets/`**: A folder containing sample files, such as invoices and layouts, for testing and demonstration purposes.

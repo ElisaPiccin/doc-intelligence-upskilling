@@ -1,11 +1,3 @@
-# coding: utf-8
-
-# -------------------------------------------------------------------------
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License. See License.txt in the project root for
-# license information.
-# --------------------------------------------------------------------------
-
 """
 FILE: sample_analyze_batch_documents.py
 SOURCE: https://github.com/Azure/azure-sdk-for-python/blob/azure-ai-documentintelligence_1.0.0/sdk/documentintelligence/azure-ai-documentintelligence/samples/sample_analyze_batch_documents.py
