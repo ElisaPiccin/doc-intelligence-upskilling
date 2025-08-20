@@ -66156,6 +66156,33 @@
             }
           ]
         },
+        "City": {
+          "type": "string",
+          "valueString": "Philadelphia",
+          "content": "Philadelphia",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                0.505,
+                2.595,
+                1.175,
+                2.595,
+                1.175,
+                2.73,
+                0.505,
+                2.73
+              ]
+            }
+          ],
+          "confidence": 0.995,
+          "spans": [
+            {
+              "offset": 981,
+              "length": 12
+            }
+          ]
+        },
         "LastName": {
           "type": "string",
           "valueString": "Andrea",
@@ -66207,33 +66234,6 @@
             {
               "offset": 1000,
               "length": 2
-            }
-          ]
-        },
-        "City": {
-          "type": "string",
-          "valueString": "Philadelphia",
-          "content": "Philadelphia",
-          "boundingRegions": [
-            {
-              "pageNumber": 1,
-              "polygon": [
-                0.505,
-                2.595,
-                1.175,
-                2.595,
-                1.175,
-                2.73,
-                0.505,
-                2.73
-              ]
-            }
-          ],
-          "confidence": 0.995,
-          "spans": [
-            {
-              "offset": 981,
-              "length": 12
             }
           ]
         }
